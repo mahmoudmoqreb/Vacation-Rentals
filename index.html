@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.css" />
+    <style>
+      * {
+        text-transform: capitalize;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        font-family: "Cairo", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+        line-height: 1.8;
+      }
+      nav form {
+        position: relative;
+      }
+      nav form i {
+        position: absolute;
+        padding-left: 5px;
+        top: 35%;
+      }
+      nav form input[type="search"]::placeholder {
+        padding-left: 20px;
+      }
+      .container img {
+        text-align: center;
+        margin: 0 auto;
+        transition: 1s;
+      }
+      .container img:hover {
+        transform: scale(1.1) rotate(-5deg);
+        cursor: pointer;
+      }
+      footer .links ul li {
+        list-style: none;
+        transition: 0.5s;
+        padding-top: 15px;
+        display: block;
+      }
+      footer .links ul li:hover {
+        padding-bottom: 8px;
+      }
+    </style>
+    <title>page home</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"> vacation rentals</a>
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav mb-2">
+            <li class="nav-item">
+              <a href="#" class="nav-link active"
+                ><i class="fa-solid fa-house"></i> home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-star"></i>top destinations</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-user"></i>about us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-ticket"></i>book tickets</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-tower-observation"></i>reservation</a
+              >
+            </li>
+          </ul>
+        </div>
+        <form action="" class="d-flex gap-3" role="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            class="search form-control"
+            placeholder="search here"
+          />
+          <button class="btn btn-outline-success">search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="carousel slide" id="carousel">
+      <div class="carousel-indicators">
+        <button
+          class="active"
+          type="button"
+          data-bs-slide-to="0"
+          data-bs-target="#carousel"
+        ></button>
+        <button
+          type="button"
+          data-bs-slide-to="1"
+          data-bs-target="#carousel"
+        ></button>
+        <button
+          type="button"
+          data-bs-slide-to="2"
+          data-bs-target="#carousel"
+        ></button>
+        <button
+          type="button"
+          data-bs-slide-to="3"
+          data-bs-target="#carousel"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/media//sea-8437245_1920.jpg" alt="" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img src="/media/jellyfish-698521_1920.jpg" alt="" class="d-block" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/media/kingfisher-8705377_1920.jpg"
+            alt=""
+            class="d-block"
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="/media//waves-3361029_1920.jpg" alt="" class="d-block" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"> </span>
+      </button>
+      <button
+        class="carousel-control-next"
+        data-bs-target="#carousel"
+        type="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"> </span>
+      </button>
+    </div>
+    <div class="container text-center" style="padding: 30px">
+      <h2>best vacation rentals</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <button class="btn btn-primary">start now!</button>
+    </div>
+    <div class="container text-center pb-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0">
+            <img
+              src="/media/friend-02.jpg"
+              alt=""
+              class="card-img-top rounded-circle"
+              style="width: 50%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">type 1</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                accusamus distinctio quis impedit nam libero, vero aliquid ea
+                obcaecati, suscipit nisi debitis molestiae voluptatibus harum
+                repellat. Vel laborum molestiae nesciunt, eaque porro sit
+                laudantium, recusandae nisi aperiam quasi mollitia aspernatur
+                expedita cumque? Consectetur quam asperiores iure, molestiae qui
+                a voluptatum!
+              </p>
+              <button class="btn btn-success">book now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0">
+            <img
+              src="/media/friend-02.jpg"
+              alt=""
+              class="card-img-top rounded-circle"
+              style="width: 50%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">type 2</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                accusamus distinctio quis impedit nam libero, vero aliquid ea
+                obcaecati, suscipit nisi debitis molestiae voluptatibus harum
+                repellat. Vel laborum molestiae nesciunt, eaque porro sit
+                laudantium, recusandae nisi aperiam quasi mollitia aspernatur
+                expedita cumque? Consectetur quam asperiores iure, molestiae qui
+                a voluptatum!
+              </p>
+              <button class="btn btn-warning">book now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0">
+            <img
+              src="/media/friend-02.jpg"
+              alt=""
+              class="card-img-top rounded-circle"
+              style="width: 50%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">type 3</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                accusamus distinctio quis impedit nam libero, vero aliquid ea
+                obcaecati, suscipit nisi debitis molestiae voluptatibus harum
+                repellat. Vel laborum molestiae nesciunt, eaque porro sit
+                laudantium, recusandae nisi aperiam quasi mollitia aspernatur
+                expedita cumque? Consectetur quam asperiores iure, molestiae qui
+                a voluptatum!
+              </p>
+              <button class="btn btn-danger">book now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="bg-dark text-light d-flex justify-content-evenly align-items-center flex-row gap-30 flex-wrap"
+    >
+      <div class="links">
+        <ul
+          class="d-flex gap-4 justify-content-center align-items-center flex-wrap"
+        >
+          <li>
+            <a href="#" text-primary class="active text-decoration-none"
+              >about us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none">support2407 </a>
+          </li>
+          <li>
+            <a href="#" text-primary class="text-decoration-none"
+              >privacy policy</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="left d-block p-5">
+        &copy;2024 جميع الحقوق محفوظه-برمج وصمم محمود مقرب
+      </div>
+      <div class="right d-block">vacation rentals</div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
